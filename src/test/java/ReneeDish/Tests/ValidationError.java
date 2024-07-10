@@ -15,7 +15,7 @@ public class ValidationError extends BaseComponent {
 	@Test(groups={"Error validation"})
 	public void landingPageValidation() {
 		
-		String ProductName = "ZARA COAT 3";
+	
 		
 	//invalidemail
 		landPage.loginApplication("anshigmail.com","Iamking@000");

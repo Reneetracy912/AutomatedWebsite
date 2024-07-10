@@ -15,7 +15,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-
 public class StandaloneTest {
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();

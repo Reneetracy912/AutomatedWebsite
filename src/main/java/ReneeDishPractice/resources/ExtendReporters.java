@@ -1,22 +1,23 @@
 package ReneeDishPractice.resources;
 
-import ReneeDishPractice.ExtendTests.ExtentReports;
-import ReneeDishPractice.ExtendTests.ExtentSparkReporter;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtendReporters {
-	public static ExtentReports getReportsObject() {
-		String path = System.getProperty("user.dir")+ "\\reports\\index.html";
-		//intatiating class
+	public static ExtentReports getReportObject()
+	{//hisswelssd
+		String path =System.getProperty("user.dir")+"//reports//index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		//Using method from that class for report name
-		reporter.config().setReportName("Web Automation results");
-		reporter.config().setDocumentTitle("Web Automation results");
-		//main class that drive reporting execution create and console test execution
-	 ExtentReports extent = new ExtentReports();
+		reporter.config().setReportName("Web Automation Results");
+		reporter.config().setDocumentTitle("Test Results");
+		
+		ExtentReports extent =new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester","RahulShetty");
+		extent.setSystemInfo("Tester", "Rahul Shetty");
 		return extent;
 		
+		
+		
 	}
-
 }
+

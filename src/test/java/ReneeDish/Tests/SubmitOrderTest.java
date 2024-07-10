@@ -76,7 +76,7 @@ public class SubmitOrderTest extends BaseComponent{
 //		map1.put("password", "Iamkingg");
 //		map1.put("product", "ADIDAS ORIGINAL");
 		
-		List<HashMap<String,String>> data=jasonDataToMap(System.getProperty("user.dir")+"C:\\Users\\reneetracy.vr\\eclipse-workspace\\SeleniumPractice\\src\\test\\java\\ReneeDishData\\PurchaseOrder.json");
+		List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"C:\\Users\\reneetracy.vr\\eclipse-workspace\\SeleniumPractice\\src\\test\\java\\ReneeDishData\\PurchaseOrder.json");
 		
 		
 		return new Object[][]{{data.get(0)},{data.get(0)}};

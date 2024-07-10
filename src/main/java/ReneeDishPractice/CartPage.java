@@ -34,10 +34,15 @@ public class CartPage extends AbstractComponents{
 		Boolean match = cartProducts.stream().anyMatch(cartProduct->cartProduct.getText().equalsIgnoreCase(ProductName));
 		return match;
     }
+    public Boolean VerifyProductDisplay(String productName) {
+		Boolean match = cartProducts.stream().anyMatch(product -> product.getText().equalsIgnoreCase(productName));
+		return match;
+
+	}
     public checkoutpage gotocheckout() {
     	checkout.click();
-    	checkoutpage checkout = new checkoutpage(driver);
-    	return checkout;
+    	//checkoutpage checkout = new checkoutpage(driver);
+    	return new checkoutpage(driver);
     	
     }
     
